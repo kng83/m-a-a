@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="signupForm">
+    <div class="form-group">
+        <label>Enter your name:</label>
+        <input type="text" class="form-control" formControlName="username">
+    </div>
+    <div class="form-group">
+        <label>Enter your email:</label>
+        <input type="text" class="form-control" formControlName="email">
+    </div>
+    <button class="btn btn-success" (click)="onSubmit()" [disabled]="!signupForm.valid">Dodaj mnie</button>
+  </form>
+</div>
+<br>
+<div class="container">
+  <div *ngFor="let user of users">
+    <div class="card card-block myColor">
+        <div>
+            <p>User name: {{user.name}}</p>
+            <p>User email: {{user.email}}</p>
+          </div>         
+    </div>
+    <br>  
+  </div>
+</div>

@@ -1,0 +1,24 @@
+{
+    "wynik": [
+        {
+            "id": 0,
+            "name": "Pies zielony",
+            "price": 2.50
+        },
+        {
+            "id": 1,
+            "name": "Kot czerwony",
+            "price": 2.50
+        },
+        {
+            "id": 2,
+            "name": "An ice sculpture",
+            "price": 12.50
+        },
+        {
+            "id": 3,
+            "name": "A blue mouse",
+            "price": 25.50
+        }
+    ]
+}

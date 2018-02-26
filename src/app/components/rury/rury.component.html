@@ -1,0 +1,29 @@
+<div class="container">
+  <div>
+    <form [formGroup]="hardForm">
+     
+      <div *ngFor="let fname of fnames">
+          <label>Nazwa </label>
+          <input class="form-control" type="text" [formControlName]='[fname]'>
+      </div>
+      <hr>
+      <button class="btn btn-primary" (click)="onItemAdd()">Dodaj urzadzenie</button>
+    </form>
+    <br>
+    <br>
+  </div>
+  <div *ngFor="let hard of hardware">
+    <div class="row">
+      <div class="card card-block col-12" 
+      [appMycolor]="{'bgColor':'orange','color':'green'}">
+        <div class="row" >
+          <p class="p-1" [ngStyle]="{fontStyle: 'italic'}">Nazwa urzadzenia: {{hard.hardwareName}} |</p>
+          <p class="p-1"> Cena urzadzenia: {{hard.hardwarePrice | plncurrency:space}} </p>
+          <p class="p-1"> Miejsce urzadzenia: {{hard.hardwarePlace}} </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  
+</div>

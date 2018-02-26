@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card" >
+    <ul class="list-group ">
+       <li class="list-group-item bg-primary text-white">
+        <div class="col-sm-2">Id</div>
+
+      </li>
+      <li class="list-group-item bghover" *ngFor="let arr of myArray;let i=index;"
+      style= "cursor: pointer" 
+      >
+        <div class="col-sm-2">{{arr}}</div>
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-primary" (click)="postSiemensData('133')">Press Me</button>
+  <button class="btn btn-success" (click)="getOnlineValue()">Press Me</button>
+  </div>
+
+  <div class="container jumbotron">
+    <form class="form-group">
+      <div div class="form-group row">
+      <label class="col-2 col-form-label">Wartosc do Plc:</label>
+      <p class="form-control col-2" type='number'>{{valueToSend}}</p> 
+      <div class="col-2">
+      <label id='myValX'class=" btn btn-outline-success fa fa-arrow-up rounded" (click)='onMousePressUp()'></label>
+      <label id='myValX'class=" btn btn-outline-danger fa fa-arrow-down rounded" (click)='onMousePressDown()'></label>
+      </div>
+      </div>    
+    </form>
+  </div>

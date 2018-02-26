@@ -1,0 +1,21 @@
+//instalacja bootstrap
+npm install bootstrap@4.0.0-alpha.6 jquery tether --save
+//ikony
+node_modules/font-awesome/scss/font-awesome.scss
+npm install font-awesome
+//nowy prjekt sass
+ng new my-new-project --style=sass
+
+Solution 2: Update Existing Project
+
+If you already have an Angular CLI project with raw CSS or anything other than SASS, you can update your application to use SASS. All you have to do is use your terminal and type in a simple Angular CLI command.
+
+ng set defaults.styleExt scss
+
+pozniej nalezy dodac sciezke do config
+
+"styles": [
+        "styles.css",
+        "../node_modules/bootstrap/scss/bootstrap.scss"
+      ],
+      http://172.27.22.203/

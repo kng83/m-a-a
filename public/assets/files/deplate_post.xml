@@ -1,0 +1,67 @@
+<NETLink
+	action = "read_var"
+	mpi_address = "2"
+	slot = "0">
+	<read>
+		<output
+			html_id = "1"
+			type = "byte"
+			index = "124"
+			count = "1">
+		</output>
+		<flag
+			html_id = "2"
+			type = "byte"
+			index = "0"
+			count = "1">
+		</flag>
+		<input
+			html_id = "3"
+			type = "byte"
+			index = "124"
+			count = "1">
+		</input>
+		<input
+			html_id = "4"
+			type = "byte"
+			index = "0"
+			count = "1">
+		</input>
+		<input
+			html_id = "5"
+			type = "word"
+			index = "0"
+			count = "1">
+		</input>
+		<input
+			html_id = "6"
+			type = "dword"
+			index = "0"
+			count = "1">
+		</input>
+		<output
+			html_id = "7"
+			type = "byte"
+			index = "0"
+			count = "1">
+		</output>
+		<output
+			html_id = "8"
+			type = "word"
+			index = "0"
+			count = "1">
+		</output>
+		<output
+			html_id = "9"
+			type = "dword"
+			index = "0"
+			count = "1">
+		</output>
+		<data
+			html_id = "10"
+			type = "byte"
+			index = "12.0"
+			count = "1">
+		</data>
+	</read>
+</NETLink>

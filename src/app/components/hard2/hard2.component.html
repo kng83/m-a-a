@@ -1,0 +1,32 @@
+<div class="container">
+    <div>
+      <form [formGroup]="hardForm">
+       
+        <div *ngFor="let fname of fnames">
+            <label>{{pattern.hard[fname]['infotext']}}</label>
+            <input class="form-control" [type]='[pattern["hard"][fname]["fieldtype"]]' [formControlName]='[fname]'>
+            <p class="text-info" *ngIf="!hardForm.get(fname).valid">Ten wpis jest niepoprawny</p>
+        </div>
+        <hr>
+        <button class="btn btn-primary" (click)="onItemAdd()">Dodaj urzadzenie</button>
+      </form>
+      <br>
+      <br>
+    </div>
+    <div *ngFor="let hard of hards">
+      <div class="row">
+        <div class="card card-block col-12" 
+        [appMycolor]="{'bgColor':'orange','color':'grey','defaultBgColor':'lime'}">
+          <div class="row">
+            <p  *ngFor="let fname of fnames" 
+            class="p-1" 
+            href="#"
+            >
+            {{pattern.hard[fname]['infotext']}}: {{hard[fname]}} |</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    
+  </div>

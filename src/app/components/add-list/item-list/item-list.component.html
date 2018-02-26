@@ -1,0 +1,15 @@
+<div class="card" [ngStyle]="bgColor">
+ <div class="row ">
+    <div class="card-block"><img class="img img-fluid rounded" [hidden]="itsHidden" alt="Responsive image" [src]="imageUrl"></div>
+    <div class="card-block ">
+        <!-- <h1>{{index}}</h1> -->
+        <h5 class=" text-white">Nazwa przedmiotu to {{elemData.name}}</h5>
+        <h5 class=" text-white">Cena Przedmiotu to {{elemData.value}}</h5>
+      </div>
+    <div class="card-block text-right">
+      <button class="btn btn-warning align-text-bottom" (click)="deleteCard()">Delete</button>
+    </div>
+   </div>
+</div>
+
+

@@ -1,0 +1,66 @@
+
+	<table>
+        <div>
+				<b>Licznik Palet do Gender</b>			
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_Gender")); --></MWSL></b>
+		</div>
+		<div>
+			<b>Licznik Palet Wlot 1</b>
+			<b><MWSL><!-- write(GetVar("War_Licz_Palet_I1")); --></MWSL></b>
+		</div>
+		<div>		
+				<b>Licznik Palet Wlot 2</b>		
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_I2")); --></MWSL></b>		
+		</div>
+
+		<div>		
+				<b>Licznik Palet Wlot 3</b>	
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_I3")); --></MWSL></b>
+		</div>
+		<div>		
+				<b>Licznik Palet Wlot 4</b>		
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_I4")); --></MWSL></b>			
+		</div>
+		<div>
+				<b>Licznik Palet Wlot 5</b>
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_I5")); --></MWSL></b>
+		</div>
+		<div>		
+				<b>Licznik Palet KB1</b>		
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_KB1")); --></MWSL></b>		
+		</div>
+		<div>			
+				<b>Licznik Palet KB2</b>	
+				<b><MWSL><!-- write(GetVar("War_Licz_Palet_KB2")); --></MWSL></b>			
+		</div>
+		<div>
+				<b>Przejechane kilometry</b>			
+				<b><MWSL><!-- write(GetVar("Przejechane_KM")); --></MWSL></b>		
+		</div>
+		<div>
+				<b>Pozycja aktualna</b>
+				<b><MWSL><!-- write(GetVar("pozycja_aktualna")); --></MWSL></b>
+	
+		</div>
+		<div>
+
+		
+				<b>Wozek w trybie auto</b>	
+				<b><MWSL><!-- write(GetVar("Wozek_W_Trybie_Auto")); --></MWSL></b>
+		</div>
+		<div>		
+				<b>Wozek w trybie recznym</b> 		
+				<b><MWSL><!-- write(GetVar("Wozek_W_Trybie_Recznym")); --></MWSL></b>
+		
+		</div>
+		<div>		
+				<b>Petla bezpieczenstwa 0 OK</b>		
+				<b><MWSL><!-- write(GetVar("Wozek_Petla_0_OK")); --></MWSL></b>
+		
+		</div>
+
+		<div>
+						<b>Petla bezpieczenstwa 1 OK</b>	
+				<b><MWSL><!-- write(GetVar("Wozek_Petla_1_Ok")); --></MWSL></b>
+		</div>
+    </table>

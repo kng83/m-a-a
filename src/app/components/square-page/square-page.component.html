@@ -1,0 +1,25 @@
+
+<div class="container jumbotron">
+  <form class="form-group">
+    <div div class="form-group row">
+    <label class="col-2 col-form-label">Wartosc X:</label>
+    <input class="form-control col-2" type='number' (change)='inputEdit()'  [(ngModel)]="myValX" name="myValX"> 
+    <div class="col-2">
+    <label id='myValX'class=" btn btn-outline-success fa fa-arrow-up rounded" (mouseover)='onMouseOver($event.target.id,"pos")'(mouseleave)='onMouseLeave()'></label>
+    <label id='myValX'class=" btn btn-outline-danger fa fa-arrow-down rounded" (mouseover)='onMouseOver($event.target.id,"neg")'(mouseleave)='onMouseLeave()'></label>
+    </div>
+    </div>
+  <div div class="form-group row">
+    <label  class="col-2 col-form-label">Wartosc Y:</label>
+    <input  class="form-control col-2" type='number'(change)='inputEdit()' [(ngModel)]="myValY" name="myValY"> 
+    <div class="col-2">
+        <label  id='myValY'class=" btn btn-outline-success fa fa-arrow-up rounded" (mouseover)='onMouseOver($event.target.id,"pos")' (mouseleave)='onMouseLeave()'></label>
+        <label  id='myValY'class=" btn btn-outline-danger fa fa-arrow-down rounded" (mouseover)='onMouseOver($event.target.id,"neg")' (mouseleave)='onMouseLeave()'></label>
+    </div>
+    </div>
+    
+  <h1>{{inputEdit()}}</h1>
+  <h1>{{myCosTam}}</h1>
+  
+  </form>
+</div>
